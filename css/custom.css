@@ -1,0 +1,224 @@
+body {
+	/* box-sizing: border-box; */
+  font-family: 'Comic Sans MS', 'Rubik', 'Sans-serif';
+  background-color: black;
+  color: #D3D3D3;
+  text-align: center;
+  width: 98%;
+  margin: auto;
+}
+
+h1{
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 35px;
+}
+
+h2{
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 35px;
+}
+
+p{
+  font-size: 24px;
+  line-height: 1.5em;
+  margin: 15px;
+  text-align: left;
+}
+
+.maintext {
+  display: inline-block;
+  max-width: 800px;
+}
+
+.higlighlink:link,
+.higlighlink:visited {
+  color: red;
+}
+
+.higlighlink:hover,
+.higlighlink:active {
+  color: #D3D3D3;
+}
+
+
+.contactBar {
+  display: flex;
+  justify-content: center;
+}
+.contactFrom {
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.formElement, .inputElement, .captchaImage {
+  width: 250px;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.messageBox {
+  min-width: 250px;
+  max-width: 600px;
+  height: 250px;
+  padding: 10px 0px;
+}
+
+.submit {
+  padding: 5px 0px;
+}
+
+.visual {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.squarelogo,
+.clock {
+  display: inline-block;
+}
+/* *, *:before, *:after {
+	box-sizing: inherit;
+} */
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #D3D3D3;
+  transition: 1s;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: grey;
+  transition: 1s;
+}
+
+/* Timeravel Logo*/
+.timeravel {
+  font-family: 'Rubik', 'Sans-serif';
+  display: block;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  font-size: 10vw;
+  /* color: #D3D3D3; */
+}
+/* Timeravel Logo*/
+/* .timeravel {
+  font-family: 'Rubik', 'Sans-serif';
+  text-align: center;
+  /* font-size: 36px; */
+  /* font-size: 10vw;
+  color: #D3D3D3;
+} */
+
+
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+
+li,
+li:link,
+li:visited {
+  display: inline-block;
+  font-size: 24px;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid grey;
+  border-radius: 8px;
+}
+
+li:hover,
+li:active {
+  display: inline-block;
+	background-color: black;
+  font-size: 24px;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid grey;
+  border-radius: 8px;
+  transform: scale(1.3);
+  transition: 1s;
+}
+
+.navbar {
+  display: block;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.bottom {
+  background-color: black;
+  opacity: 0.6;
+  position : fixed;
+  bottom: 20px;
+  width: 98%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+/* Rotating R */
+.r {
+  color: red;
+  display: inline-block;
+  font-family: 'Rubik', 'Sans-serif';
+  font-size: 110%;
+  font-weight: 520;
+  margin: -3px;
+  position: relative;
+  bottom: -3px;
+  /* Default Rotate - Modified by JS in custom.js */
+  transform: rotate(-173deg);
+  -webkit-transform: rotate(-173deg);
+  -moz-transform: rotate(-173deg);
+  -ms-transform: rotate(-173deg);
+}
+
+/* Blinkging Logo */
+.blink {
+  font-family: 'Rubik', 'Sans-serif';
+  /* font-size: 36px; */
+  font-size: 10vw;
+  color: red;
+  animation: blinker 3s linear infinite;
+}
+/* Stop Blinking */
+.no-blink {
+  animation: none;
+}
+
+/* Keyframes for Blinking Logo: animation */
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* TimeRavel Logo perfect size on any screen */
+
+@media only screen and (min-width: 780px) {
+  .timeravel, .blink {
+    font-size: 8vw;
+  }
+   .contactFrom, .formElement, .inputElement, .captchaImage {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .timeravel, .blink {
+    font-size: 5vw;
+  }
+   .contactFrom, .formElement, .inputElement, .captchaImage {
+    width: 600px;
+  }
+}
